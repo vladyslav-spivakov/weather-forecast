@@ -1,0 +1,39 @@
+body,header,main,footer,p,div {
+    margin: 0;
+    padding: 0;
+}
+
+header .title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+header .title-div #find-icon {
+    height: 48px;
+    border: 5px solid transparent; 
+    border-radius: 25%;
+}
+
+header .title-div #find-icon:hover {
+    border-color:white;
+}
+
+header .title-div .title-text {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: white;
+}
+
+header .title-div .title-text-small {
+    font-size: 1.4rem;
+}
+
+@media(min-width:425px) {
+    header .title-div {
+        padding: 0 5px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
