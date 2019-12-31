@@ -37,3 +37,8 @@ header .title-div .title-text-small {
         justify-content: space-between;
     }
 }
+
+main .pop-ups .toast .toast-ico {
+    max-height: 32px;
+    max-width:  32px;
+}
