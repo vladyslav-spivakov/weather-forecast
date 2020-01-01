@@ -1,4 +1,8 @@
 let i = 0;
+const API = "a43a6ae7c50303f26096dc3753718fac";
+let city = "London";
+let temp = "";
+let status = "";
 
 document.addEventListener("DOMContentLoaded", init());
 
@@ -18,12 +22,10 @@ function createToast() {
 }
 
 function getWeather(){ 
-   fetch(url) 
-    .then(response => response.json())
-    .then(content => {
-       
-    })
-    .catch(err => {
-        console.error(err);
-    });
+    url = "https://api.openweathermap.org/data/2.5/forecast?q=" + "London" + "&appid=" + API; 
+   
+    $.getJSON(url, function(json) {
+    alert(json);
+    });     
+        
 }
