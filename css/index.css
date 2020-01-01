@@ -42,3 +42,13 @@ main .pop-ups .toast .toast-ico {
     max-height: 32px;
     max-width:  32px;
 }
+
+main .pop-ups {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+main .pop-ups .pop-up {
+    margin-top: 10px;
+}
