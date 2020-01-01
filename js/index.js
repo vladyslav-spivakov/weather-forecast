@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", init());
 
 function init(){
     createToast();
+    getWeather();
 }
 
 function createToast() {
@@ -16,14 +17,13 @@ function createToast() {
     i++;
 }
 
-function getWather(){ //NOT WORKING!!!
-    const Http = new XMLHttpRequest();
-    const url='https://jsonplaceholder.typicode.com/posts';
-    Http.open("GET", url);
-    Http.send();
-
-    Http.onreadystatechange = (e) => {
-    console.log(Http.responseText)
-    }
-
+function getWeather(){ 
+   fetch(url) 
+    .then(response => response.json())
+    .then(content => {
+       
+    })
+    .catch(err => {
+        console.error(err);
+    });
 }
