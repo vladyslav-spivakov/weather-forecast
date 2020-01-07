@@ -18,8 +18,6 @@ header .title-div .find-div{
 
 header .title-div #find-icon {
     height: 64px;
-    border: 5px solid transparent; 
-    border-radius: 25%;
     margin: 4px;
 }
 
